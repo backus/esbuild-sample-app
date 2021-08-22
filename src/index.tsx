@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { App } from "./app";
+import "./index.css";
 
 const mount = () => {
   const root = document.querySelector("#root");

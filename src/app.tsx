@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import "./app.css";
 
 const Greet = () => {
   return <h1>Hello, world!</h1>;

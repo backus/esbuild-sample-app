@@ -7,8 +7,11 @@ mkdir -p dist
 cp public/index.html dist/index.html
 
 # Watch our entrypoint file for changes, recompile, write to dist/index.js
-./node_modules/.bin/esbuild src/index.tsx \
-  --bundle \
-  --watch \
-  --loader:.svg=file \
+./node_modules/.bin/esbuild \
+  src/index.tsx             \
+  --bundle                  \
+  --watch                   \
+  --loader:.svg=file        \
+  --minify                  \
+  --sourcemap=inline        \
   --outfile=dist/index.js

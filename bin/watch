@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir -p dist/js
+
+# Note that this will only be copied over once when `bin/watch` is started. It
+# will not replace index.html if it is changed
+cp public/index.html dist/index.html
+
+# Watch our entrypoint file for changes, recompile, write to dist/js/app.js
+./node_modules/.bin/esbuild src/app.tsx --bundle --watch --outfile=dist/js/app.js

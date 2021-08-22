@@ -14,6 +14,7 @@
 - CSS via Emotion
 - Actually running `tsc` separately for type checking
 - A normal `bin/build` file that just runs `esbuild` once (in other words, this is dev only)
+- Serve things in dev via a webserver. Just do `open dist/index.html` after you have run `bin/watch`
 
 ## Building
 

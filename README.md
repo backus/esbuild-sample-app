@@ -1,7 +1,22 @@
 # Simple esbuild app
 
+## Basics
+
+#### Things this repo does:
+
+- Bundles a TS app
+- Rebuilds when a file changes
+- Handles SVGs and CSS imports
+- Includes the JS and CSS that esbuild outputs via an HTML file
+
+#### Things this repo does not do (yet):
+
+- CSS via Emotion
+- Actually running `tsc` separately for type checking
+- A normal `bin/build` file that just runs `esbuild` once (in other words, this is dev only)
+
 ## Building
 
 Run `bin/watch` to run esbuild and watch for changes on the file system.
 
-The `index.html` file is not part of esbuild but will be copied over when `bin/watch` is run.
+NOTE: The `index.html` file is not part of esbuild but will be copied over when `bin/watch` is first run.

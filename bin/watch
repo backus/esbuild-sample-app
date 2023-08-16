@@ -11,6 +11,8 @@ cp public/index.html dist/index.html
   src/index.tsx             \
   --bundle                  \
   --watch                   \
+  --serve                   \
+  --servedir=./dist         \
   --loader:.svg=file        \
   --minify                  \
   --sourcemap=inline        \
